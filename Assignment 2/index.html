@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indian Top Stocks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="header">
-      <h1>Market Pulse</h1>
-      <p>Top 10 Indian Stocks</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Top Gainers & Losers Extension</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Market Top Gainers & Losers</h1>
+    <p>Daily Stock Market Performance</p>
+  </div>
+
+  <div class="container" id="app">
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <span>Analyzing Market Data...</span>
     </div>
-    
-    <div class="container" id="app">
-      <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <span>Analyzing Market Data...</span>
-      </div>
-      
-      <div class="stock-list" id="stock-list">
-        <!-- Stock items will be rendered here dynamically -->
-      </div>
+
+    <div class="stock-list" id="stock-list">
+      <!-- Stock items will be rendered here dynamically -->
     </div>
-    
-    <script src="./config.js"></script>
-    <script src="./main.js"></script>
-  </body>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./main.js"></script>
+</body>
+
 </html>
