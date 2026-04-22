@@ -32,3 +32,4 @@ You will need to get a free API key from their website and place it in your conf
 - HTML, CSS, JavaScript (Vanilla)
 - Alpha Vantage API (REST)
 - Chrome Extensions API Manifest V3
+## Youtube Video Link - https://youtu.be/T8K-jteecHE
