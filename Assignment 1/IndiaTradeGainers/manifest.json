@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "India Top Stocks Scanner",
+  "version": "1.0",
+  "description": "Premium scanner for the top 10 gaining stocks in the Indian market (NSE).",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "https://scanner.tradingview.com/*"
+  ]
+}

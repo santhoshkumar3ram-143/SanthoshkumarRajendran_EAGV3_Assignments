@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India Top Stocks</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+      </div>
+      <h1>Top NSE Gainers</h1>
+      <button id="refresh-btn" aria-label="Refresh">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      </button>
+    </header>
+    
+    <div id="loading" class="loader-container">
+      <div class="spinner"></div>
+      <p>Scanning markets...</p>
+    </div>
+
+    <div id="error-message" class="hidden">
+      Failed to load stocks. Please try again.
+    </div>
+
+    <div class="stock-list-header hidden" id="list-header">
+      <span class="col-symbol">Symbol</span>
+      <span class="col-price">Price (₹)</span>
+      <span class="col-change">24h Change</span>
+    </div>
+
+    <ul id="stock-list" class="stock-list hidden">
+      <!-- Stock items will be injected here -->
+    </ul>
+    
+    <footer>
+      <p>Data provided by TradingView</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
