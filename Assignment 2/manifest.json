@@ -9,6 +9,6 @@
   },
   "permissions": [],
   "host_permissions": [
-    "https://generativelanguage.googleapis.com/*"
+    "https://www.alphavantage.co/*"
   ]
 }
